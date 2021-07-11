@@ -1,0 +1,88 @@
+.theme-light {
+    --color-primary: #F7FFF7;
+    --color-secondary: #6d94ff;
+    --color-accent: #d8d8d8;
+    --font-color: #04090a;
+    --one: #d1d0d0;
+    --two: #d1d0d0;
+    --four: #d1d0d0;
+}
+
+.theme-dark {
+    --color-primary: #000000ce;
+    --color-secondary: #000000ce;
+    --color-accent: #000000ce;
+    --font-color: #ffffff;
+    --one: #04011bce;
+    --two: #04011bce;
+    --four: #04011bce;
+}
+body{
+    background-color: var(--color-primary) !important;
+    overflow-x: visible !important;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+  }
+  header img{
+    height: 80%;
+    width: auto;
+  }
+h1{
+    color: var(--font-color);
+}
+.button{
+    background-color: var(--color-accent) !important;
+    border: none !important;
+    outline: none !important;
+    justify-self: flex-end!important;
+    color: var(--font-color) !important;
+    margin-left: auto
+}
+
+.backlog{
+    background-color: var(--one) !important;
+    border: none !important;
+}
+.inprog{
+    background-color: var(--two) !important;
+    border: none !important;
+}
+.done{
+    background-color: var(--four) !important;
+    border: none !important;
+}
+.left{
+    justify-self: flex-start !important;
+}
+.right{
+    justify-self: flex-end !important;
+}
+footer{
+    background-color: var(--color-accent);
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 1.2em;
+}
+#app{
+    margin-bottom: 100px !important;
+}
+.row-sdf {
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: var(--font-secondary)!important;
+    color: var(--font-color)!important;
+}
